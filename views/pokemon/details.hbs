@@ -1,0 +1,26 @@
+<div>
+
+  <h3>Aqui los detalles de un pokemon</h3>
+
+  <div>
+
+    <h3>
+      <span>{{onePokemon.number}}</span>
+      <span>{{onePokemon.name}}</span>
+    </h3>
+
+    <img src="{{onePokemon.url}}" alt="pokemon" width="300px">
+
+    <div>
+      <p>Tipo:</p>
+      <ul>
+        {{#each onePokemon.type}}
+          <li>{{this}}</li>
+        {{/each}}
+        {{!-- {{onePokemon.type}} --}}
+      </ul>
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,45 @@
+<div>
+
+  <h4>Aqui el formulario de busqueda</h4>
+
+  <form action="/search">
+
+    <label for="pokemon">Busca Pokemon por su nombre</label>
+    <br>
+    <input type="text" name="pokemon">
+    <br>
+    {{!-- <label for="age">edad</label>
+    <br>
+    <input type="number" name="age">
+    <br>
+    <label for="color">color</label>
+    <br>
+    <input type="text" name="color"> --}}
+    <br>
+    <button>Buscar</button>
+
+  </form>
+
+
+    <div>
+
+    <h3>
+      <span>{{foundPokemon.number}}</span>
+      <span>{{foundPokemon.name}}</span>
+    </h3>
+
+    <img src="{{foundPokemon.url}}" alt="pokemon" width="300px">
+
+    <div>
+      <p>Tipo:</p>
+      <ul>
+        {{#each foundPokemon.type}}
+          <li>{{this}}</li>
+        {{/each}}
+        {{!-- {{foundPokemon.type}} --}}
+      </ul>
+    </div>
+
+  </div>
+
+</div>

@@ -5,7 +5,9 @@
   <ul>
 
     {{#each this.allPokemons}}
-      <li>{{this.name}}</li>
+      <li>
+        <a href="/pokemon/{{this._id}}">{{this.name}}</a>
+      </li>
     {{/each}}
 
   </ul>
